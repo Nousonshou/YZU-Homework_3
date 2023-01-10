@@ -1,0 +1,190 @@
+/*--------General---------*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #221736 50%, #6016e8 100%);
+  }
+  
+  /*--------Navigation bar---------*/
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 2;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+/*--------Slideshow section---------*/
+  .slideshow-container {
+    position: relative;
+    margin-top: 60px;
+    /*max-width: 1000px;*/
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+    top: 57px;
+    left:0
+  }
+  
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    background-color: rgba(34, 23, 54, 0.5); 
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+  .description {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    background-color: rgba(34, 23, 54, 0.5); 
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+
+}
+  /*.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }*/
+  
+  .description {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 26px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 2;
+  }
+
+  .div[style="text-align:center"]{
+    z-index: 2;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .content_heading {
+    color:rgb(239, 193, 254);
+  }
+/*--------Bikes---------*/
+  .bike-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .bike-card {
+    box-shadow: 0 4px 8px 0 rgba(164, 125, 237, 0.2);
+    border: 1px solid #000000; 
+    transition: 0.3s;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    color:antiquewhite;
+  }
+  
+  .bike-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(247, 246, 248, 0.5);
+    border: 1px solid #f0f0f4;
+  }
+  
+  .bike-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+/*--------Showroom---------*/
+  .showroom-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .showroom-card {
+    box-shadow: 0 4px 8px 0 rgba(219, 139, 241, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    color:antiquewhite;
+  }
+  
+  .showroom-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(195, 127, 243, 0.5);
+  }
+  
+  .showroom-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }  
